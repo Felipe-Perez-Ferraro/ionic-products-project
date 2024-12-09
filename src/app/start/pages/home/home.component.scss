@@ -1,0 +1,26 @@
+ion-content {
+  ion-grid {
+    ion-row {
+      ion-col.banner_img {
+        position: relative; 
+        ion-img {
+          position: relative;
+          left: -120px; 
+          height: auto;
+          width: 500px; 
+        }
+      }
+
+      ion-col.banner_titleAndDesc {
+        ion-title {
+          font-size: 2.4rem;
+          font-weight: 600;
+        }
+        ion-button {
+          color: #f6f8fc;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
