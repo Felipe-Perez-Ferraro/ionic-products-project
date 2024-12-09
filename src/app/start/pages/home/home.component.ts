@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   IonHeader,
-  IonTitle,
   IonToolbar,
   IonContent,
   IonImg,
@@ -29,7 +28,6 @@ import {
     IonImg,
     IonContent,
     IonToolbar,
-    IonTitle,
     IonHeader,
     RouterModule,
   ],

@@ -15,6 +15,6 @@ export class ProductsService {
   getBannerMotorbikes(): Observable<Motorbike[]> {
     return this.htpp
       .get<MotorbikeResponse>(URL)
-      .pipe(map((res) => res.data.splice(0, 5)));
+      .pipe(map((res) => res.data.splice(0, 4)));
   }
 }
