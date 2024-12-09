@@ -1,0 +1,264 @@
+{
+  "motorbikes": [
+    {
+      "id": 1,
+      "motorbike": "Motorbike Alpha",
+      "price": 1000,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A high-performance bike for the adventurous rider.",
+      "discount_price": 900
+    },
+    {
+      "id": 2,
+      "motorbike": "Motorbike Bravo",
+      "price": 1500,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A sleek design with amazing speed.",
+      "discount_price": 1350
+    },
+    {
+      "id": 3,
+      "motorbike": "Motorbike Charlie",
+      "price": 1200,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "For everyday use with a comfortable ride.",
+      "discount_price": 1100
+    },
+    {
+      "id": 4,
+      "motorbike": "Motorbike Delta",
+      "price": 2000,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "The ultimate sports bike with a powerful engine.",
+      "discount_price": 1800
+    },
+    {
+      "id": 5,
+      "motorbike": "Motorbike Echo",
+      "price": 850,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Affordable and reliable for daily commuting.",
+      "discount_price": 750
+    },
+    {
+      "id": 6,
+      "motorbike": "Motorbike Foxtrot",
+      "price": 1800,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Luxury bike with state-of-the-art features.",
+      "discount_price": 1700
+    },
+    {
+      "id": 7,
+      "motorbike": "Motorbike Golf",
+      "price": 2200,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Fast, stylish, and ready for the track.",
+      "discount_price": 2000
+    },
+    {
+      "id": 8,
+      "motorbike": "Motorbike Hotel",
+      "price": 950,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A great bike for new riders.",
+      "discount_price": 850
+    },
+    {
+      "id": 9,
+      "motorbike": "Motorbike India",
+      "price": 1250,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A perfect combination of style and performance.",
+      "discount_price": 1150
+    },
+    {
+      "id": 10,
+      "motorbike": "Motorbike Juliett",
+      "price": 1550,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Elegant design with an amazing engine.",
+      "discount_price": 1400
+    },
+    {
+      "id": 11,
+      "motorbike": "Motorbike Kilo",
+      "price": 900,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Lightweight and perfect for city traffic.",
+      "discount_price": 800
+    },
+    {
+      "id": 12,
+      "motorbike": "Motorbike Lima",
+      "price": 1600,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Stylish and fast, ideal for long rides.",
+      "discount_price": 1450
+    },
+    {
+      "id": 13,
+      "motorbike": "Motorbike Mike",
+      "price": 1100,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Great for both city and off-road adventures.",
+      "discount_price": 1000
+    },
+    {
+      "id": 14,
+      "motorbike": "Motorbike November",
+      "price": 1400,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Affordable yet powerful, with great handling.",
+      "discount_price": 1300
+    },
+    {
+      "id": 15,
+      "motorbike": "Motorbike Oscar",
+      "price": 1300,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A comfortable and stylish bike for any ride.",
+      "discount_price": 1200
+    },
+    {
+      "id": 16,
+      "motorbike": "Motorbike Papa",
+      "price": 1700,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Powerful, durable, and great for adventure.",
+      "discount_price": 1600
+    },
+    {
+      "id": 17,
+      "motorbike": "Motorbike Quebec",
+      "price": 1050,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "A great bike for beginners and experienced riders.",
+      "discount_price": 950
+    },
+    {
+      "id": 18,
+      "motorbike": "Motorbike Romeo",
+      "price": 1750,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Ideal for long journeys, comfortable and reliable.",
+      "discount_price": 1650
+    },
+    {
+      "id": 19,
+      "motorbike": "Motorbike Sierra",
+      "price": 1450,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Sleek design and great for city commutes.",
+      "discount_price": 1300
+    },
+    {
+      "id": 20,
+      "motorbike": "Motorbike Tango",
+      "price": 1950,
+      "images": [
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png",
+        "assets/motorbikes/motorbike.png"
+      ],
+      "description": "Designed for speed and agility, ideal for racing.",
+      "discount_price": 1800
+    }
+  ]
+}
