@@ -1,6 +1,7 @@
 import {
   Component,
   CUSTOM_ELEMENTS_SCHEMA,
+  inject,
   OnInit,
   signal,
 } from '@angular/core';
@@ -8,6 +9,8 @@ import { IonContent, IonLabel } from '@ionic/angular/standalone';
 import { SwiperContainer } from 'swiper/element';
 import { SwiperOptions } from 'swiper/types';
 import { register } from 'swiper/element/bundle';
+import { ProductsService } from '../../service/products.service';
+import { Motorbike } from '../../interfaces/motorbikes.interface';
 register();
 
 @Component({
@@ -19,11 +22,16 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class BannerSlideshowComponent implements OnInit {
+  private productsService = inject(ProductsService);
+
+  motorbikes = signal<Motorbike[]>([]);
   swiperElement = signal<SwiperContainer | null>(null);
 
-  constructor() {}
-
   ngOnInit() {
+    this.productsService.getBannerMotorbikes().subscribe((res) => {
+      this.motorbikes.set(res);
+    });
+
     this.displayCarousel();
   }
 
@@ -35,6 +43,9 @@ export class BannerSlideshowComponent implements OnInit {
       slidesPerView: 1,
       pagination: {
         enabled: true,
+      },
+      autoplay: {
+        delay: 4000,
       },
     };
 
