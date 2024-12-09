@@ -34,3 +34,7 @@
 
     ```bash
     ionic serve
+    ```
+
+## Recorrido de la App
+**No disponible todavía...**
