@@ -12,6 +12,7 @@ import {
   notificationsOutline,
   person,
   personOutline,
+  search,
 } from 'ionicons/icons';
 
 @Component({
@@ -33,6 +34,7 @@ export class AppComponent {
       mailOutline,
       mail,
       arrowForward,
+      search,
     });
   }
 }
