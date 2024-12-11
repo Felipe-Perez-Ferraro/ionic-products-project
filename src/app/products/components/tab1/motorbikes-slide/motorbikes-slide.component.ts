@@ -6,10 +6,10 @@ import {
   OnInit,
   signal,
 } from '@angular/core';
-import { Image } from '../../interfaces/motorbikes.interface';
+import { Image } from '../../../interfaces/motorbikes.interface';
 import { SwiperContainer } from 'swiper/element';
 import { SwiperOptions } from 'swiper/types';
-import { SlideService } from '../../service/slide.service';
+import { SlideService } from '../../../service/slide.service';
 import { register } from 'swiper/element/bundle';
 register();
 
@@ -22,13 +22,13 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class MotorbikesSlideComponent implements OnInit {
-  slideService = inject(SlideService);
+  private slideService = inject(SlideService);
 
   motorbikesImg = input.required<Image[]>();
 
-  swiperElement = signal<SwiperContainer | null>(null);
-  querySel = signal<string>('.swiper-container-bikesImg');
-  swiperOpt = signal<SwiperOptions>({
+  private swiperElement = signal<SwiperContainer | null>(null);
+  private querySel = signal<string>('.swiper-container-bikesImg');
+  private swiperOpt = signal<SwiperOptions>({
     slidesPerView: 1,
     pagination: {
       enabled: true,

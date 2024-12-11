@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-button fill="clear" slot="start" (click)="cancel()">
+      <ion-label color="light">Go Back</ion-label>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <swiper-container init="false" class="swiper-container-modalImg">
+          @for (image of motorbike()?.images; track image.id) {
+          <swiper-slide>
+            <ion-img [src]="image.src"></ion-img>
+          </swiper-slide>
+          }
+        </swiper-container>
+      </ion-col>
+      <ion-col size="12">
+        <h1>{{ motorbike()?.motorbike }}</h1>
+        <h2>${{ motorbike()?.price }}</h2>
+        <p>{{ motorbike()?.description }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

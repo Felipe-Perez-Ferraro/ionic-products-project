@@ -8,8 +8,8 @@ import {
 } from '@angular/core';
 import { SwiperContainer } from 'swiper/element';
 import { SwiperOptions } from 'swiper/types';
-import { Motorbike } from '../../interfaces/motorbikes.interface';
-import { SlideService } from '../../service/slide.service';
+import { Motorbike } from '../../../interfaces/motorbikes.interface';
+import { SlideService } from '../../../service/slide.service';
 import { register } from 'swiper/element/bundle';
 register();
 
@@ -21,13 +21,11 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class BannerSlideshowComponent implements OnInit {
-  slideService = inject(SlideService);
+  private slideService = inject(SlideService);
 
-  motorbikes = input.required<Motorbike[]>();
-
-  swiperElement = signal<SwiperContainer | null>(null);
-  querySel = signal<string>('.swiper-container-bikes');
-  swiperOpt = signal<SwiperOptions>({
+  private swiperElement = signal<SwiperContainer | null>(null);
+  private querySel = signal<string>('.swiper-container-bikes');
+  private swiperOpt = signal<SwiperOptions>({
     slidesPerView: 1,
     pagination: {
       enabled: true,
@@ -36,6 +34,8 @@ export class BannerSlideshowComponent implements OnInit {
       delay: 4000,
     },
   });
+
+  motorbikes = input.required<Motorbike[]>();
 
   ngOnInit() {
     this.slideService.displayCarousel(

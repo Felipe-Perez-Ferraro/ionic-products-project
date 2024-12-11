@@ -19,7 +19,7 @@ import {
   IonCardHeader,
   IonCardTitle,
 } from '@ionic/angular/standalone';
-import { Motorbike } from '../../interfaces/motorbikes.interface';
+import { Motorbike } from '../../../interfaces/motorbikes.interface';
 import { CommonModule } from '@angular/common';
 import { MotorbikesSlideComponent } from '../motorbikes-slide/motorbikes-slide.component';
 import { ModalController } from '@ionic/angular/standalone';

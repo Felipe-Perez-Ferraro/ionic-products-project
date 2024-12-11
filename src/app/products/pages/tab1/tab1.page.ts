@@ -1,17 +1,11 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import {
-  IonHeader,
-  IonToolbar,
-  IonContent,
-  IonListHeader,
-  IonLabel,
-  IonIcon,
-  IonList,
-} from '@ionic/angular/standalone';
-import { BannerSlideshowComponent } from '../../components/banner-slideshow/banner-slideshow.component';
-import { ProductsGridComponent } from '../../components/products-grid/products-grid.component';
+import { IonContent } from '@ionic/angular/standalone';
+import { BannerSlideshowComponent } from '../../components/tab1/banner-slideshow/banner-slideshow.component';
+import { ProductsGridComponent } from '../../components/tab1/products-grid/products-grid.component';
 import { ProductsService } from '../../service/products.service';
 import { Motorbike } from '../../interfaces/motorbikes.interface';
+import { SearchbarComponent } from 'src/app/shared/components/searchbar/searchbar.component';
+import { HeaderComponent } from 'src/app/shared/components/header/header.component';
 
 @Component({
   selector: 'app-tab1',
@@ -19,15 +13,11 @@ import { Motorbike } from '../../interfaces/motorbikes.interface';
   styleUrls: ['tab1.page.scss'],
   standalone: true,
   imports: [
-    IonList,
-    IonIcon,
-    IonLabel,
-    IonListHeader,
-    IonHeader,
-    IonToolbar,
     IonContent,
     BannerSlideshowComponent,
     ProductsGridComponent,
+    SearchbarComponent,
+    HeaderComponent,
   ],
 })
 export class Tab1Page implements OnInit {
