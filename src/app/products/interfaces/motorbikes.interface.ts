@@ -17,6 +17,7 @@ export interface Motorbike {
   discount_price: number;
 }
 
-export enum Image {
-  AssetsMotorbikesMotorbikePNG = 'assets/motorbikes/motorbike.png',
+export interface Image {
+  id: number;
+  src: string;
 }
