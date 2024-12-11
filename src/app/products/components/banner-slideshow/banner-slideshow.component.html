@@ -1,0 +1,25 @@
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <swiper-container class="swiper-container-bikes" init="false">
+        @if (motorbikes().length > 1) { @for (m of motorbikes(); track m.id) {
+        <swiper-slide>
+          <ion-card color="tertiary" class="card_banner">
+            <ion-img
+              [src]="m.images[0].src"
+              style="width: 170px; height: auto"
+            />
+            <ion-card-content>
+              <ion-card-title>{{ m.motorbike }}</ion-card-title>
+              <ion-card-subtitle>${{ m.price }}</ion-card-subtitle>
+              <ion-button shape="round" color="primary" class="ion-margin-top">
+                <p>Shop Now!</p>
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </swiper-slide>
+        } }
+      </swiper-container>
+    </ion-col>
+  </ion-row>
+</ion-grid>
