@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import {
+  arrowForward,
   cart,
   cartOutline,
   home,
@@ -31,6 +32,7 @@ export class AppComponent {
       cart,
       mailOutline,
       mail,
+      arrowForward,
     });
   }
 }
