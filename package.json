@@ -6,6 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "backend": "npx json-server --watch data/db.json --port 3000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -28,7 +29,9 @@
     "@capacitor/status-bar": "6.0.2",
     "@ionic/angular": "^8.0.0",
     "ionicons": "^7.2.1",
+    "json-server": "^1.0.0-beta.3",
     "rxjs": "~7.8.0",
+    "swiper": "^11.1.15",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

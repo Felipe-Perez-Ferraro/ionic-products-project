@@ -1,0 +1,31 @@
+<ion-grid fixed>
+  <ion-toolbar color="medium">
+    <ion-title>New</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-label color="primary" routerLink="/products/motorbikes-catalog"
+          >More</ion-label
+        >
+        <ion-icon slot="end" name="arrow-forward" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-row>
+    @for (m of motorbikes(); track m.id) {
+    <ion-col size="6" class="ion-no-padding">
+      <ion-card color="medium">
+        <ion-card-header class="ion-no-padding">
+          <products-component-motorbikes-slide [motorbikesImg]="m.images" />
+        </ion-card-header>
+        <ion-card-content
+          class="ion-no-padding ion-margin-top"
+          (click)="presentModal(m.id)"
+        >
+          <ion-card-title>{{ m.motorbike }}</ion-card-title>
+          <ion-card-subtitle>${{ m.price }}</ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    }
+  </ion-row>
+</ion-grid>

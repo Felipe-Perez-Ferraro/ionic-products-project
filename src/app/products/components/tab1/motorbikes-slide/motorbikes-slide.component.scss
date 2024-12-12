@@ -1,0 +1,13 @@
+swiper-container {
+  background-color: #deceb9;
+  border-radius: 16px;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+swiper-container {
+  --swiper-pagination-color: var(--ion-color-warning);
+}

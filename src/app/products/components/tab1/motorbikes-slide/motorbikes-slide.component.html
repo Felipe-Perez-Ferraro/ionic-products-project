@@ -1,0 +1,7 @@
+<swiper-container class="swiper-container-bikesImg" init="false">
+  @for (image of motorbikesImg(); track image.id) {
+  <swiper-slide class="ion-padding">
+    <ion-img [src]="image.src" style="width: 120px; height: 150px"></ion-img>
+  </swiper-slide>
+  }
+</swiper-container>

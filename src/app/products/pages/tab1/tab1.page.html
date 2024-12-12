@@ -1,0 +1,13 @@
+<!-- Header -->
+<shared-header />
+
+<ion-content [fullscreen]="true" color="medium">
+  <!-- Searchbar -->
+  <shared-searchbar />
+
+  <!-- Slide show banner -->
+  <products-component-banner-slideshow [motorbikes]="motorbikes()" />
+
+  <!-- Products Grid -->
+  <products-component-products-grid [motorbikes]="motorbikes()" />
+</ion-content>
