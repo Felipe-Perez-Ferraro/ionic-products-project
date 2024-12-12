@@ -24,6 +24,7 @@ import { CommonModule } from '@angular/common';
 import { MotorbikesSlideComponent } from '../motorbikes-slide/motorbikes-slide.component';
 import { ModalController } from '@ionic/angular/standalone';
 import { MotorbikesModalComponent } from '../motorbikes-modal/motorbikes-modal.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'products-component-products-grid',
@@ -46,6 +47,7 @@ import { MotorbikesModalComponent } from '../motorbikes-modal/motorbikes-modal.c
     IonCol,
     CommonModule,
     MotorbikesSlideComponent,
+    RouterModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
