@@ -1,0 +1,34 @@
+swiper-container {
+  --swiper-pagination-color: var(--ion-color-primary);
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-medium);
+}
+
+.card_banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 180px;
+  border-radius: 15px;
+
+  ion-card-content {
+    display: flex;
+    flex-direction: column;
+
+    ion-card-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    ion-card-subtitle {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    
+    ion-button {
+      p {
+        color: #f6f8fc;
+        font-weight: 600;
+      }
+    }
+  }
+}
