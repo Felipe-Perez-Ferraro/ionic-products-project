@@ -1,13 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import {
-  IonContent,
-  IonIcon,
-  IonLabel,
-  IonButton,
-  IonButtons,
-  IonTitle,
-  IonToolbar,
-} from '@ionic/angular/standalone';
+import { IonContent } from '@ionic/angular/standalone';
 import { BannerSlideshowComponent } from '../../components/tab1/banner-slideshow/banner-slideshow.component';
 import { ProductsGridComponent } from '../../components/tab1/products-grid/products-grid.component';
 import { ProductsService } from '../../service/products.service';
@@ -22,12 +14,6 @@ import { map } from 'rxjs';
   styleUrls: ['tab1.page.scss'],
   standalone: true,
   imports: [
-    IonToolbar,
-    IonTitle,
-    IonButtons,
-    IonButton,
-    IonLabel,
-    IonIcon,
     IonContent,
     BannerSlideshowComponent,
     ProductsGridComponent,

@@ -12,6 +12,10 @@ const URL = 'http://localhost:3000/motorbikes';
 export class ProductsService {
   private http = inject(HttpClient);
 
+  getAllMotorbikes(): Observable<Motorbike[]> {
+    return this.http.get<Motorbike[]>(URL).pipe(map((data) => data));
+  }
+
   getMotorbikes(): Observable<Motorbike[]> {
     return this.http.get<MotorbikeResponse>(`${URL}?_page=1&_per_page=10`).pipe(
       map(({ data }) => {

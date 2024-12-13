@@ -1,3 +1,26 @@
 ion-searchbar {
-  --border-radius: 8px
+  --border-radius: 8px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  width: 405px;
+  z-index: 99999;
+}
+
+ion-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ion-avatar {
+  margin-right: 10px;
+}
+
+ion-label {
+  font-weight: bold;
 }

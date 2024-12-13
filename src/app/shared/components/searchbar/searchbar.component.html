@@ -6,7 +6,20 @@
         type="text"
         search-icon="search"
         mode="md"
+        [debounce]="500"
+        (ionInput)="searchInput($event)"
+        class="ion-no-padding"
       ></ion-searchbar>
+      <ion-list class="ion-no-padding search-results">
+        @for (m of motorbikesOpt(); track m.id) {
+        <ion-item (click)="presentModal(m.id)">
+          <ion-avatar>
+            <img [src]="m.images[0].src" />
+          </ion-avatar>
+          <ion-label>{{ m.motorbike }}</ion-label>
+        </ion-item>
+        }
+      </ion-list>
     </ion-col>
   </ion-row>
 </ion-grid>
